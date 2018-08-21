@@ -1,14 +1,14 @@
 spring: 
- profiles: 
-  active: 
-  - dev
+  profiles: 
+    active: 
+	- dev 
 ---
 spring: 
- profiles: dev 
- application: 
-  name: super-config-dev
+  profiles: div      #开发环境
+  application: 
+    name: super-config-dev
 ---
 spring: 
- profiles: dev 
- application: 
-  name: super-config-dev 
+  profiles: test     #测试环境
+  application: 
+    name: super-config-test
