@@ -48,6 +48,7 @@ mybatis:
 
 spring: 
   application: 
+    profiles: dept8001     #测试环境
     name: supermap-dept
   datasource: 
     type: com.alibaba.druid.pool.DruidDataSource
