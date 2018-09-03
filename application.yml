@@ -3,10 +3,16 @@ spring:
     active: 
     - dev 
 ---
+server:
+  port: 3355
 spring: 
   profiles: div      #开发环境
   application: 
     name: super-config-dev
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka-dev.com:7001/eureka/    
 ---
 spring: 
   profiles: test     #测试环境
